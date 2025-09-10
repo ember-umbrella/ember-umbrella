@@ -4614,7 +4614,9 @@ commander@^4.1.1:
 
 "common-components@link:tests/dummy/lib/common-components":
   version "0.0.0"
-  uid ""
+  dependencies:
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 common-tags@^1.4.0, common-tags@^1.8.0:
   version "1.8.0"
@@ -5217,7 +5219,9 @@ duplexify@^3.4.2, duplexify@^3.6.0:
 
 "eager-blog@link:./tests/dummy/lib/eager-blog":
   version "0.0.0"
-  uid ""
+  dependencies:
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
@@ -5317,11 +5321,17 @@ ember-auto-import@^1.5.3:
 
 "ember-blog@link:./tests/dummy/lib/ember-blog":
   version "0.0.0"
-  uid ""
+  dependencies:
+    common-components "link:tests/dummy/lib/common-components"
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 "ember-chat@link:./tests/dummy/lib/ember-chat":
   version "0.0.0"
-  uid ""
+  dependencies:
+    common-components "link:tests/dummy/lib/common-components"
+    ember-cli-babel "*"
+    ember-cli-htmlbars "*"
 
 ember-cli-addon-tests@^0.11.1:
   version "0.11.1"
@@ -11443,9 +11453,9 @@ shebang-regex@^3.0.0:
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
 shell-quote@^1.6.1:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
-  integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.8.3.tgz#55e40ef33cf5c689902353a3d8cd1a6725f08b4b"
+  integrity sha512-ObmnIF4hXNg1BqhnHmgbDETF8dLPCggZWBjkQfhZpbszZnYur5DUljTcCHii5LC3J5E0yeO/1LIMyH+UvHQgyw==
 
 shellwords@^0.1.1:
   version "0.1.1"
